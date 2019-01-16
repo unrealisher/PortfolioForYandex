@@ -7,8 +7,72 @@
     <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+
+
+    <header class="header">
+      <h1 hidden>Сайт портфолио для Yandex</h1>
+      <section class="header__profile profile">
+        <h2 hidden>Профиль</h2>
+        <img class="profile__image" src="" alt="Моя аватарка" />
+        <b class="profile__name">Pavel Mezentsev</b>
+        <p class="profile__info">
+          Frontend junior developer from Saint-Petersburg, Russia
+        </p>
+        <button class="profile__button button">Связаться</button>
+      </section>
+    </header>
+
+
+    <main class="main">
+
+      <section class="main__expectations expectations">
+        <h2 class="expectations__title">Ожидания от ШРИ</h3>
+        <ul class="expectations__list drop-down-list">
+
+          <!-- Элемент списка -->
+          <li class="drop-down-list__item drop-down-item">
+            <h3 class="drop-down-item__title">Свобода</h4>
+            <button class="drop-down-item__button"></button>
+            <p class="drop-down-item__text"></p>
+          </li>
+          <!-- Конец элемента -->
+
+        </ul>
+      </section>
+
+      <section class="main__works works">
+        <h2 class="works__title">Мои работы</h2>
+        <p class="works__info"></p>
+
+        <!-- Проект -->
+        <article class="works__project project">
+          <h3 class="project__title"></h3>
+          <a href="" class="project__url"></a>
+          <img src="" alt="" class="project__screen">
+          <p class="project__info"></p>
+        </article>
+        <!-- Конец проекта -->
+      </section>
+
+    </main>
+
+
+    <footer class="footer">
+      <section class="footer__info info">
+        <h2 class="info__title">Контактная информация</h2>
+        <ul class="info__social social">
+          <li class="social__item social__item_vk"></li>
+          <li class="social__item social__item_instagram"></li>
+        </ul>
+        <p class="info__text"></p>
+        <form action="" class="info__form mail">
+          <input type="text" class="mail__author">
+          <input type="text" class="mail__email">
+          <input type="text" class="mail__message">
+          <input type="file" class="mail__file">
+          <input type="text" class="mail__submit button">
+        </form>
+      </section>
+    </footer>
   </body>
 </html>
