@@ -1,0 +1,32 @@
+{
+  "name": "PortfolioForYandex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp style & gulp html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unrealisher/PortfolioForYandex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unrealisher/PortfolioForYandex/issues"
+  },
+  "homepage": "https://github.com/unrealisher/PortfolioForYandex#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
