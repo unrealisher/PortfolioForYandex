@@ -1,0 +1,55 @@
+.project__url {
+  display: inline-block;
+  color: #71abff;
+  margin-bottom: 16px;
+}
+
+.project__screen {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-radius: 4px;
+  height: 47vw;
+  margin-bottom: 16px;
+  max-height: 400px;
+  transition: 1s;
+  width: 100%;
+}
+
+.project__screen_nerds {
+  background-image: url(./images/nerds.jpg);
+}
+
+.project__first-radio:checked {
+  & ~ .project__slider_first {
+    background-color: transparent;
+  }
+}
+
+.project__second-radio:checked {
+  & ~ .project__screen {
+    background-position: 0 -47vw;
+    transition: 1s;
+  }
+  & ~ .project__slider_second {
+    background-color: transparent;
+  }
+}
+
+.project__slider {
+  background-color: #71abff;
+  border-radius: 50%;
+  border: 1px solid #71abff;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 8px;
+  margin-bottom: 10px;
+  width: 8px;
+}
+
+.project__screen_sedona {
+  background-image: url(./images/sedona.jpg);
+}
+
+.project__screen_keksobooking {
+  background-image: url(./images/keksobooking.jpg);
+}

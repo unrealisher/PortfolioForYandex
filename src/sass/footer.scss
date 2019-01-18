@@ -1,0 +1,15 @@
+.footer {
+  background-color: #eff1f2;
+  padding: 52px 20px;
+  @media (min-width: 600px) {
+    padding: 52px 40px;
+  }
+  @media (min-width: 1000px) {
+    padding: 100px 150px 151px 150px;
+  }
+}
+
+.footer__info {
+  margin: 0 auto;
+  max-width: 700px;
+}

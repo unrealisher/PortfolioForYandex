@@ -1,0 +1,14 @@
+.main {
+  background-color: white;
+}
+
+.main__expectations {
+  margin: 0 auto;
+  padding: 52px 20px 67px 20px;
+  @media (min-width: 600px) {
+    padding: 52px 40px 67px 50px;
+  }
+  @media (min-width: 1000px) {
+    padding: 100px 150px 115px 150px;
+  }
+}

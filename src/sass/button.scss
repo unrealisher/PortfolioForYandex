@@ -1,0 +1,17 @@
+.button {
+  background-color: #0059d9;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 800;
+  height: 52px;
+  line-height: 24px;
+  width: 280px;
+  &:hover,
+  &:focus {
+    background-color: black;
+  }
+  &:active {
+    background-color: rgba(#0059d9, 0.7);
+  }
+}

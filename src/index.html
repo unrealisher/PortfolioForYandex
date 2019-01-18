@@ -7,70 +7,251 @@
     <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
-
-
     <header class="header">
       <h1 hidden>Сайт портфолио для Yandex</h1>
-      <section class="header__profile profile">
+      <section class="profile header__profile">
         <h2 hidden>Профиль</h2>
-        <img class="profile__image" src="" alt="Моя аватарка" />
+        <div class="profile__image"></div>
         <b class="profile__name">Pavel Mezentsev</b>
         <p class="profile__info">
           Frontend junior developer from Saint-Petersburg, Russia
         </p>
-        <button class="profile__button button">Связаться</button>
+        <button class="button profile__button">Связаться</button>
       </section>
     </header>
 
-
     <main class="main">
-
-      <section class="main__expectations expectations">
-        <h2 class="expectations__title">Ожидания от ШРИ</h3>
+      <section class="expectations main__expectations">
+        <h2 class="h2-subtitle expectations__title">Ожидания от ШРИ</h2>
         <ul class="expectations__list drop-down-list">
-
-          <!-- Элемент списка -->
-          <li class="drop-down-list__item drop-down-item">
-            <h3 class="drop-down-item__title">Свобода</h4>
-            <button class="drop-down-item__button"></button>
-            <p class="drop-down-item__text"></p>
+          <li class="drop-down-item drop-down-list__item">
+            <input
+              type="checkbox"
+              id="first-checkbox"
+              class="drop-down-item__checkbox"
+              hidden
+            />
+            <label for="first-checkbox" class="drop-down-item__button"
+              ><h3 class="drop-down-item__title h3-subtitle">Свобода</h3></label
+            >
+            <p class="drop-down-item__text">
+              Разработка медиаплана, анализируя результаты рекламной кампании,
+              нейтрализует эмпирический портрет потребителя.
+            </p>
           </li>
-          <!-- Конец элемента -->
-
+          <li class="drop-down-item drop-down-list__item">
+            <input
+              type="checkbox"
+              id="second-checkbox"
+              class="drop-down-item__checkbox"
+              hidden
+            />
+            <label for="second-checkbox" class="drop-down-item__button"
+              ><h3 class="drop-down-item__title h3-subtitle">
+                Равенство
+              </h3></label
+            >
+            <p class="drop-down-item__text">
+              Разработка медиаплана, анализируя результаты рекламной кампании,
+              нейтрализует эмпирический портрет потребителя.
+            </p>
+          </li>
+          <li class="drop-down-item drop-down-list__item">
+            <input
+              type="checkbox"
+              id="third-checkbox"
+              class="drop-down-item__checkbox"
+              hidden
+            />
+            <label for="third-checkbox" class="drop-down-item__button"
+              ><h3 class="drop-down-item__title h3-subtitle">
+                Братство
+              </h3></label
+            >
+            <p class="drop-down-item__text">
+              Разработка медиаплана, анализируя результаты рекламной кампании,
+              нейтрализует эмпирический портрет потребителя.
+            </p>
+          </li>
         </ul>
       </section>
 
-      <section class="main__works works">
-        <h2 class="works__title">Мои работы</h2>
-        <p class="works__info"></p>
+      <section class="works main__works">
+        <div class="works__wrapper">
+          <h2 class="h2-subtitle works__title">Мои работы</h2>
+          <p class="works__info">
+            Собраны избранные, реально работающие проекты
+          </p>
 
-        <!-- Проект -->
-        <article class="works__project project">
-          <h3 class="project__title"></h3>
-          <a href="" class="project__url"></a>
-          <img src="" alt="" class="project__screen">
-          <p class="project__info"></p>
-        </article>
-        <!-- Конец проекта -->
+          <article class="project works__project">
+            <h3 class="project__title h3-subtitle">Nerds</h3>
+            <a
+              href="https://unrealisher.github.io/UnrealNerds/"
+              class="project__url"
+              >unrealisher.github.io/UnrealNerds</a
+            >
+            <input
+              type="radio"
+              class="project__first-radio"
+              id="nerds-first-slide"
+              name="nerds"
+              checked
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__second-radio"
+              id="nerds-second-slide"
+              name="nerds"
+              hidden
+            />
+            <div class="project__screen project__screen_nerds"></div>
+            <label
+              for="nerds-first-slide"
+              class="project__slider project__slider_first"
+            ></label>
+            <label
+              for="nerds-second-slide"
+              class="project__slider project__slider_second"
+            ></label>
+            <p class="project__info">
+              Проходя обучение от htmlacademy, Nerds был моим первым большим
+              проектом. Используется html, css и совсем немного js.
+            </p>
+          </article>
+
+          <article class="project works__project">
+            <h3 class="project__title h3-subtitle">Sedona</h3>
+            <a
+              href="https://unrealisher.github.io/UnrealSedona/build/"
+              class="project__url"
+              >unrealisher.github.io/UnrealSedona</a
+            >
+            <input
+              type="radio"
+              class="project__first-radio"
+              id="sedona-first-slide"
+              name="sedona"
+              checked
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__second-radio"
+              id="sedona-second-slide"
+              name="sedona"
+              hidden
+            />
+            <div class="project__screen project__screen_sedona"></div>
+            <label
+              for="sedona-first-slide"
+              class="project__slider project__slider_first"
+            ></label>
+            <label
+              for="sedona-second-slide"
+              class="project__slider project__slider_second"
+            ></label>
+            <p class="project__info">
+              Проходя обучение от htmlacademy, Nerds был моим первым большим
+              проектом. Используется html, css и совсем немного js.
+            </p>
+          </article>
+
+          <article class="project works__project">
+            <h3 class="project__title h3-subtitle">Keksobooking</h3>
+            <a
+              href="https://unrealisher.github.io/UnrealKeksobooking/"
+              class="project__url"
+              >unrealisher.github.io/Keksobooking</a
+            >
+            <input
+              type="radio"
+              class="project__first-radio"
+              id="keksobooking-first-slide"
+              name="keksobooking"
+              checked
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__second-radio"
+              id="keksobooking-second-slide"
+              name="keksobooking"
+              hidden
+            />
+            <div class="project__screen project__screen_keksobooking"></div>
+            <label
+              for="keksobooking-first-slide"
+              class="project__slider project__slider_first"
+            ></label>
+            <label
+              for="keksobooking-second-slide"
+              class="project__slider project__slider_second"
+            ></label>
+            <p class="project__info">
+              Проходя обучение от htmlacademy, Nerds был моим первым большим
+              проектом. Используется html, css и совсем немного js.
+            </p>
+          </article>
+        </div>
       </section>
-
     </main>
 
-
     <footer class="footer">
-      <section class="footer__info info">
-        <h2 class="info__title">Контактная информация</h2>
-        <ul class="info__social social">
-          <li class="social__item social__item_vk"></li>
-          <li class="social__item social__item_instagram"></li>
+      <section class="info footer__info">
+        <h2 class="h2-subtitle info__title">Контактная информация</h2>
+        <ul class="social info__social">
+          <li class="social__item">
+            <a
+              href="https://vk.com/id104047139"
+              class="social__link social__link_vk"
+              >Vkontakte</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              href="https://www.instagram.com/unrealisher/"
+              class="social__link social__link_instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              href="https://www.instagram.com/unrealisher/"
+              class="social__link social__link_telegram"
+              >Telegram</a
+            >
+          </li>
         </ul>
-        <p class="info__text"></p>
-        <form action="" class="info__form mail">
-          <input type="text" class="mail__author">
-          <input type="text" class="mail__email">
-          <input type="text" class="mail__message">
-          <input type="file" class="mail__file">
-          <input type="text" class="mail__submit button">
+        <p class="info__text">
+          Я открыт для новых проектов. Вы можете прислать мне для оценки
+          примерное техническое задание или просто описание проекта своими
+          словами.
+        </p>
+        <form action="" class="mail info__form">
+          <input
+            type="text"
+            class="mail-input mail__author"
+            placeholder="Как вас зовут?"
+            required
+          />
+          <input
+            type="text"
+            class="mail-input mail__email"
+            placeholder="Почтовый ящик"
+            required
+          />
+          <textarea
+            name="text"
+            class="mail-input mail__message"
+            cols="40"
+            rows="5"
+            placeholder="Сообщение"
+            required
+          ></textarea>
+          <label for="mail__file" class="mail__file">Прикрепить ТЗ</label>
+          <input type="file" id="mail__file" hidden />
+          <input type="submit" class="button mail__submit" />
         </form>
       </section>
     </footer>

@@ -1,0 +1,45 @@
+.mail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mail__author {
+  flex-grow: 1;
+}
+
+.mail__email {
+  flex-grow: 1;
+}
+
+.mail__file {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #c5cdd7;
+  color: #0059d9;
+  display: block;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  width: 100%;
+  &:hover,
+  &:focus {
+    color: black;
+  }
+  &:active {
+    color: #0059d9;
+    opacity: 0.7;
+  }
+}
+
+.mail__message {
+  height: 136px;
+  width: 100%;
+}
+
+.mail__submit {
+  width: 100%;
+}

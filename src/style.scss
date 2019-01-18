@@ -1,6 +1,23 @@
-@import "./normalize.css";
+@import "./normalize.scss";
+@import "./scafolding.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+
+@import "./sass/container.scss";
+@import "./sass/button.scss";
+@import "./sass/subtitles.scss";
+@import "./sass/mail-input.scss";
+@import "./sass/header.scss";
+@import "./sass/profile.scss";
+@import "./sass/main.scss";
+@import "./sass/expectations.scss";
+@import "./sass/drop-down-list.scss";
+@import "./sass/drop-down-item.scss";
+@import "./sass/works.scss";
+@import "./sass/project.scss";
+@import "./sass/footer.scss";
+@import "./sass/info.scss";
+@import "./sass/social.scss";
+@import "./sass/mail.scss";

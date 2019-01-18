@@ -1,0 +1,18 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info__title {
+  margin-bottom: 16px;
+}
+
+.info__social {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.info__text {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,29 @@
+.works {
+  background-color: #25282a;
+  color: white;
+  padding: 52px 20px;
+  text-align: center;
+  @media (min-width: 600px) {
+    padding: 52px 40px;
+  }
+  @media (min-width: 1000px) {
+    padding: 100px 150px;
+  }
+}
+
+.works__wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.works__title {
+  margin-bottom: 8px;
+}
+
+.works__info {
+  margin-bottom: 60px;
+}
+
+.works__project {
+  margin-bottom: 60px;
+}
