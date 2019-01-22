@@ -9,6 +9,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
+const imagemin = require("gulp-imagemin");
 const server = require("browser-sync").create();
 
 sass.compiler = require("node-sass");
@@ -18,7 +19,6 @@ gulp.task("style", function() {
     .src("src/style.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("public"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("public"))
@@ -27,10 +27,17 @@ gulp.task("style", function() {
 
 gulp.task("html", function() {
   return gulp
-    .src("src/index.html")
+    .src("./src/index.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("public"))
     .pipe(server.stream());
+});
+
+gulp.task("image", function() {
+  return gulp
+    .src("./public/images/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("./public/images"));
 });
 
 gulp.task("serve", function() {

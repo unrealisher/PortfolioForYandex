@@ -1,6 +1,6 @@
 .project__url {
-  display: inline-block;
   color: #71abff;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -13,24 +13,100 @@
   max-height: 377px;
   transition: 1s;
   width: 100%;
+  @media (min-width: 1000px) {
+    margin-bottom: 28px;
+  }
+}
+
+.project__slider-text-wrapper {
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.project__slider-wrapper {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1000px) {
+    order: 1;
+  }
 }
 
 .project__screen_nerds {
   background-image: url(./images/nerds.jpg);
 }
 
+.project__screen_sedona {
+  background-image: url(./images/sedona.jpg);
+}
+
+.project__screen_keksobooking {
+  background-image: url(./images/keksobooking.jpg);
+}
+
+.project__screen_keksobooking {
+  background-image: url(./images/keksobooking.jpg);
+}
+
+.project__screen_todo {
+  background-image: url(./images/todo_1.jpg);
+  background-position: center;
+  background-size: auto 100%;
+  transition: 0.6s;
+}
+
+.project__screen_star {
+  background-image: url(./images/stardb_1.jpg);
+  background-position: center;
+  background-size: auto 100%;
+  transition: 0.6s;
+}
+
 .project__first-radio:checked {
-  & ~ .project__slider_first {
+  & ~ .project__slider-text-wrapper .project__slider_first {
     background-color: transparent;
   }
 }
 
 .project__second-radio:checked {
-  & ~ .project__screen {
-    background-position: 0 -47vw;
-    transition: 1s;
+  & ~ .project__screen_nerds,
+  & ~ .project__screen_sedona,
+  & ~ .project__screen_keksobooking {
+    background-position: 0 bottom;
   }
-  & ~ .project__slider_second {
+  & ~ .project__screen_star {
+    background-image: url(./images/stardb_2.jpg);
+  }
+  & ~ .project__screen_todo {
+    background-image: url(./images/todo_2.jpg);
+  }
+  & ~ .project__slider-text-wrapper .project__slider_second {
+    background-color: transparent;
+  }
+}
+
+.project__third-radio:checked {
+  & ~ .project__screen_star {
+    background-image: url(./images/stardb_3.jpg);
+  }
+  & ~ .project__screen_todo {
+    background-image: url(./images/todo_3.jpg);
+  }
+  & ~ .project__slider-text-wrapper .project__slider_third {
+    background-color: transparent;
+  }
+}
+
+.project__fourth-radio:checked {
+  & ~ .project__screen_star {
+    background-image: url(./images/stardb_4.jpg);
+  }
+  & ~ .project__screen_todo {
+    background-image: url(./images/todo_4.jpg);
+  }
+  & ~ .project__slider-text-wrapper .project__slider_fourth {
     background-color: transparent;
   }
 }
@@ -44,12 +120,15 @@
   height: 8px;
   margin-bottom: 10px;
   width: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
-.project__screen_sedona {
-  background-image: url(./images/sedona.jpg);
-}
-
-.project__screen_keksobooking {
-  background-image: url(./images/keksobooking.jpg);
+.project__info {
+  @media (min-width: 1000px) {
+    order: 0;
+    text-align: left;
+    width: 520px;
+  }
 }

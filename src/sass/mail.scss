@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.mail__author {
-  flex-grow: 1;
-}
-
+.mail__author,
 .mail__email {
-  flex-grow: 1;
+  width: 100%;
+  @media (min-width: 1000px) {
+    width: 314px;
+  }
 }
 
 .mail__file {

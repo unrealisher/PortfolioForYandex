@@ -1,6 +1,7 @@
 .social {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .social__item:not(:last-child) {
@@ -26,21 +27,21 @@
 .social__link_vk {
   background-color: #4c75a3;
   background-image: url(./images/vk-icon.svg);
-  background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .social__link_instagram {
   background-color: #e4405f;
   background-image: url(./images/insta-icon.svg);
-  background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .social__link_telegram {
   background-color: #0088cc;
   background-image: url(./images/telegram-icon.svg);
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
 }

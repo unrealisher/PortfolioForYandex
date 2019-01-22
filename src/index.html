@@ -32,11 +32,12 @@
               hidden
             />
             <label for="first-checkbox" class="drop-down-item__button"
-              ><h3 class="drop-down-item__title h3-subtitle">Свобода</h3></label
+              ><h3 class="drop-down-item__title h3-subtitle">Опыт</h3></label
             >
             <p class="drop-down-item__text">
-              Разработка медиаплана, анализируя результаты рекламной кампании,
-              нейтрализует эмпирический портрет потребителя.
+              Опыт не только хороший, но и нередко коварный учитель: после того
+              как дело сделано и на него потрачено время, израсходованы
+              материальные средства, он предлагает еще лучший вариант.
             </p>
           </li>
           <li class="drop-down-item drop-down-list__item">
@@ -48,12 +49,13 @@
             />
             <label for="second-checkbox" class="drop-down-item__button"
               ><h3 class="drop-down-item__title h3-subtitle">
-                Равенство
+                Знания и умения
               </h3></label
             >
             <p class="drop-down-item__text">
-              Разработка медиаплана, анализируя результаты рекламной кампании,
-              нейтрализует эмпирический портрет потребителя.
+              Истинное знание состоит не в знакомстве с инструментами — это
+              создает только педанта, а в умении ими пользоваться — это создает
+              профессионала.
             </p>
           </li>
           <li class="drop-down-item drop-down-list__item">
@@ -65,12 +67,12 @@
             />
             <label for="third-checkbox" class="drop-down-item__button"
               ><h3 class="drop-down-item__title h3-subtitle">
-                Братство
+                Трудоустройство
               </h3></label
             >
             <p class="drop-down-item__text">
-              Разработка медиаплана, анализируя результаты рекламной кампании,
-              нейтрализует эмпирический портрет потребителя.
+              Может быть, работа не слишком приятное занятие, но куда-то ведь
+              надо утром идти.
             </p>
           </li>
         </ul>
@@ -106,18 +108,24 @@
               hidden
             />
             <div class="project__screen project__screen_nerds"></div>
-            <label
-              for="nerds-first-slide"
-              class="project__slider project__slider_first"
-            ></label>
-            <label
-              for="nerds-second-slide"
-              class="project__slider project__slider_second"
-            ></label>
-            <p class="project__info">
-              Проходя обучение от htmlacademy, Nerds был моим первым большим
-              проектом. Используется html, css и совсем немного js.
-            </p>
+            <div class="project__slider-text-wrapper">
+              <div class="project__slider-wrapper">
+                <label
+                  for="nerds-first-slide"
+                  class="project__slider project__slider_first"
+                ></label>
+                <label
+                  for="nerds-second-slide"
+                  class="project__slider project__slider_second"
+                ></label>
+              </div>
+              <p class="project__info">
+                Дизайн-студия Nerds. Самостоятельный проект интенсива "Базовый
+                html и css" от htmlacademy. <br />Используемые технологии:
+                <br />-Html<br />
+                -Css
+              </p>
+            </div>
           </article>
 
           <article class="project works__project">
@@ -143,18 +151,24 @@
               hidden
             />
             <div class="project__screen project__screen_sedona"></div>
-            <label
-              for="sedona-first-slide"
-              class="project__slider project__slider_first"
-            ></label>
-            <label
-              for="sedona-second-slide"
-              class="project__slider project__slider_second"
-            ></label>
-            <p class="project__info">
-              Проходя обучение от htmlacademy, Nerds был моим первым большим
-              проектом. Используется html, css и совсем немного js.
-            </p>
+            <div class="project__slider-text-wrapper">
+              <div class="project__slider-wrapper">
+                <label
+                  for="sedona-first-slide"
+                  class="project__slider project__slider_first"
+                ></label>
+                <label
+                  for="sedona-second-slide"
+                  class="project__slider project__slider_second"
+                ></label>
+              </div>
+              <p class="project__info">
+                Сайт городка Sedona. Самостоятельный проект интенсива
+                "Продвинутый html и css" от htmlacademy. <br />Используемые
+                технологии: <br />-Html<br />
+                -Css(Sass)
+              </p>
+            </div>
           </article>
 
           <article class="project works__project">
@@ -180,18 +194,150 @@
               hidden
             />
             <div class="project__screen project__screen_keksobooking"></div>
-            <label
-              for="keksobooking-first-slide"
-              class="project__slider project__slider_first"
-            ></label>
-            <label
-              for="keksobooking-second-slide"
-              class="project__slider project__slider_second"
-            ></label>
-            <p class="project__info">
-              Проходя обучение от htmlacademy, Nerds был моим первым большим
-              проектом. Используется html, css и совсем немного js.
-            </p>
+            <div class="project__slider-text-wrapper">
+              <div class="project__slider-wrapper">
+                <label
+                  for="keksobooking-first-slide"
+                  class="project__slider project__slider_first"
+                ></label>
+                <label
+                  for="keksobooking-second-slide"
+                  class="project__slider project__slider_second"
+                ></label>
+              </div>
+              <p class="project__info">
+                Сайт для аренды аппартаментов Keksobooking. Самостоятельный
+                проект интенсива "Базовый JavaScript" от htmlacademy.
+                <br />Используемые технологии: <br />-Html<br />
+                -Css<br />-JavaScript
+              </p>
+            </div>
+          </article>
+
+          <article class="project works__project">
+            <h3 class="project__title h3-subtitle">Todo List</h3>
+            <a href="https://unrealisher.github.io/todo/" class="project__url"
+              >unrealisher.github.io/todo</a
+            >
+            <input
+              type="radio"
+              class="project__first-radio"
+              id="todo-first-slide"
+              name="todo"
+              checked
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__second-radio"
+              id="todo-second-slide"
+              name="todo"
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__third-radio"
+              id="todo-third-slide"
+              name="todo"
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__fourth-radio"
+              id="todo-fourth-slide"
+              name="todo"
+              hidden
+            />
+            <div class="project__screen project__screen_todo"></div>
+            <div class="project__slider-text-wrapper">
+              <div class="project__slider-wrapper">
+                <label
+                  for="todo-first-slide"
+                  class="project__slider project__slider_first"
+                ></label>
+                <label
+                  for="todo-second-slide"
+                  class="project__slider project__slider_second"
+                ></label>
+                <label
+                  for="todo-third-slide"
+                  class="project__slider project__slider_third"
+                ></label>
+                <label
+                  for="todo-fourth-slide"
+                  class="project__slider project__slider_fourth"
+                ></label>
+              </div>
+              <p class="project__info">
+                Стандартное приложение todo list для ознакомления с
+                возможностями React. <br />Используемые технологии:
+                <br />-Html(Jsx in React)<br />
+                -Css(Bootstrap)<br />-JavaScript(React)
+              </p>
+            </div>
+          </article>
+
+          <article class="project works__project">
+            <h3 class="project__title h3-subtitle">Star-DB</h3>
+            <a href="https://unrealisher.github.io/Star-db" class="project__url"
+              >unrealisher.github.io/Star-db/</a
+            >
+            <input
+              type="radio"
+              class="project__first-radio"
+              id="star-first-slide"
+              name="star"
+              checked
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__second-radio"
+              id="star-second-slide"
+              name="star"
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__third-radio"
+              id="star-third-slide"
+              name="star"
+              hidden
+            />
+            <input
+              type="radio"
+              class="project__fourth-radio"
+              id="star-fourth-slide"
+              name="star"
+              hidden
+            />
+            <div class="project__screen project__screen_star"></div>
+            <div class="project__slider-text-wrapper">
+              <div class="project__slider-wrapper">
+                <label
+                  for="star-first-slide"
+                  class="project__slider project__slider_first"
+                ></label>
+                <label
+                  for="star-second-slide"
+                  class="project__slider project__slider_second"
+                ></label>
+                <label
+                  for="star-third-slide"
+                  class="project__slider project__slider_third"
+                ></label>
+                <label
+                  for="star-fourth-slide"
+                  class="project__slider project__slider_fourth"
+                ></label>
+              </div>
+              <p class="project__info">
+                Сайт StarDB - база данных вселенной звездных войн. В проекте
+                используются API, компоненты высшего порядка, React Router.
+                <br />Используемые технологии: <br />-Html(Jsx in React)<br />
+                -Css(Bootstrap)<br />-JavaScript(React)
+              </p>
+            </div>
           </article>
         </div>
       </section>
